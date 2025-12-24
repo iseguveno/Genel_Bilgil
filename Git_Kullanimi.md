@@ -10,12 +10,19 @@
 - Projede versiyonlanmasını istemediğiniz dosyaları belirtebilirsiniz. (key,log .. gibi)
 ---
 ### Git Komutları
+ Komutlara başlamadan önce bilmemiz gereken terimler.
+  
+
+- **untracked (izlenmeyen)**: Yeni oluşturulmuş dosyaları ifade eder. **git init** komutu çalıştırılmış ama dosyada hiç bir işlem yapılmamıştır.
+- **unstaged (hazırlanmamış)**: Dosyada değişiklik yapılmıştır.Ancak **commit add** komutu çalıştırılmamış commit’lenmek için hazırlanmamış dosyaları ifade eder.
+- **staged (hazırlanmış)**: Commit’lenmeye hazır olan dosyaları ifade eder.
+deleted (silinmiş): Projeden silinmiş ama GIT üzerinden kaldırılmamış dosyaları ifade eder.
 - ***Git İşleyiş şeması***
 
  ![Git_calisma](./Dokuman/3-GitHub-cheat-sheet-graphic.jpg)
 
  1- **git init** 
--versiyon kontol işlemi yapmak istediğimiz dosyada bu komutu çalıştırırız.
+-versiyon kontol işlemi yapmak istediğimiz *Klasörde* bu komutu çalıştırırız.
 
  ![Git_calisma](./Dokuman/git_init.png)
  
@@ -35,3 +42,19 @@ user ve email ayarlamak için:
 
 - " *git config --global user.name "user_name"* "
 - " *git config --global email.name "email_adresi"* " komutları kullanılır.
+
+3- **git add** 
+
+  -  Değişiklik yapılan dosyaları staged ortamına göndermek için kullanılır.
+ 
+  - git add <dosya_ismi> sadece belirtilen dosyayı stage gönderir.
+ 
+* | `git add .`  | Yeni ve değişen dosyaları ekler, **silinen dosyaları eklemez**      |
+* | `git add -A` | Yeni, değişmiş **ve silinmiş** tüm dosyaları ekler                  |
+* | `git add -u` | Sadece değişmiş ve silinmiş dosyaları ekler, yeni dosyaları eklemez |
+
+4- **git rm**
+  - git rm komutu, Git deposundaki bir dosyayı silmek ve bu silme işlemini commit'e hazırlamak için kullanılır.Yani hem çalışma klasöründen dosyayı siler, hem de staging area'ya "bu dosya silindi" bilgisini ekler.
+  - git rm app.js : Belirli bir dosyayı silmek 'app.js' dosyasını siler.
+  - git rm -r src/ : Bir klasörü ve içindekileri silmek
+  - git rm --cached dosya.json : Dosyayı Git’ten sil ama bilgisayardan silme. Bu işlem dosyayı bilgisayarda bırakır ama Git’ten çıkarır.Genelde .env, config.json gibi dosyalar için kullanılır.
