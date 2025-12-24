@@ -61,3 +61,11 @@ user ve email ayarlamak için:
   
   5- **git status**
   - git staus : Yapılan değişiklikler, eklenen ve silinen dosyalar gibi bilgiler listelenir.
+  
+  - *'On branch main -> Main branch'*de olduğumuzu,
+   - *Changes not staged for commit* dosyada değişiklik yapıldığı ama commit yapılmadığı bildirir.
+   ![Git_calisma](./Dokuman/Status.png)
+
+.git add . komutu çalıştırıldıkdan sonraki git status komutu verdiğimizde ki ekran görüntüsü 
+
+![Git_calisma](./Dokuman/Status2.png)
