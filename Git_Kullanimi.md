@@ -58,3 +58,6 @@ user ve email ayarlamak için:
   - git rm app.js : Belirli bir dosyayı silmek 'app.js' dosyasını siler.
   - git rm -r src/ : Bir klasörü ve içindekileri silmek
   - git rm --cached dosya.json : Dosyayı Git’ten sil ama bilgisayardan silme. Bu işlem dosyayı bilgisayarda bırakır ama Git’ten çıkarır.Genelde .env, config.json gibi dosyalar için kullanılır.
+  
+  5- **git status**
+  - git staus : Yapılan değişiklikler, eklenen ve silinen dosyalar gibi bilgiler listelenir.
