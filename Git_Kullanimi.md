@@ -71,5 +71,6 @@ user ve email ayarlamak için:
 ![Git_calisma](./Dokuman/Status2.png)
 
  6- **git commit -m "mesaj"** 
- - *git commit -m "mesaj" : Komutu git add . ile hazırlanmış olan dosyaların *Local Repostory* e gitmesini sağlar
- 
+ - *git commit -m "mesaj" : Komutu git add . ile hazırlanmış olan dosyaların *Local Repostory* e gitmesini sağlar.
+
+ ![Git_calisma](./Dokuman/commit.png)
