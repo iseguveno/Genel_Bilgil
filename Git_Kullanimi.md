@@ -69,3 +69,7 @@ user ve email ayarlamak için:
 .git add . komutu çalıştırıldıkdan sonraki git status komutu verdiğimizde ki ekran görüntüsü 
 
 ![Git_calisma](./Dokuman/Status2.png)
+
+ 6- **git commit -m "mesaj"** 
+ - *git commit -m "mesaj" : Komutu git add . ile hazırlanmış olan dosyaların *Local Repostory* e gitmesini sağlar
+ 
