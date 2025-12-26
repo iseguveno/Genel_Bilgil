@@ -21,14 +21,23 @@ deleted (silinmiş): Projeden silinmiş ama GIT üzerinden kaldırılmamış dos
 
  ![Git_calisma](./Dokuman/3-GitHub-cheat-sheet-graphic.jpg)
 
- 1- **git init** 
--versiyon kontol işlemi yapmak istediğimiz *Klasörde* bu komutu çalıştırırız.
+1 **git init ve git clone** 
+ 
+ 1.1 **Varolan Bir Dizinde Repo Başlatma**
+- versiyon kontol işlemi yapmak istediğimiz *Klasörün* içinde iken komutu çalıştırırız.
 
  ![Git_calisma](./Dokuman/git_init.png)
  
  "Genel_Bilgi" klasörü için git versiyon işlemi başlamıştır.
 
-  2- **git config**
+ 1.2 **Mevcut bir Git Reposunu Kopyalama (Klonlama)**
+
+- Mevcut bir Git deposunun (örneğin katkıda bulunmak istediğiniz bir projenin) bir kopyasını almak istiyorsanız git clone komutunu kullanmalısınız.
+
+-*git clone https://github.com/iseguveno/Genel_Bilgil.git* komutu *https://github.com/iseguveno/Genel_Bilgil.git* bu repoya ait tüm verileri çeker ve en son sürümün çalışan bir kopyasını alır. 
+-*git clone https://github.com/iseguveno/Genel_Bilgil.git Git_Calismasi* Bu komut öncekiyle aynı şeyi yapar, ancak hedef dizine *Git_Calismasi* adını verir.
+
+2- **git config**
 
 *git*  ile ilgili konfigirasyon ayarları yapmayı sağlar.
 - " *git config --list --show-origin* " komutu  Tüm ayarlarınızı ve onların nereden geldiğini görmek için şu komutu kullanabilirsiniz.
